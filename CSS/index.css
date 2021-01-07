@@ -1,0 +1,238 @@
+/* CSS STYLESHEET FOR INDEX.HTML */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baumans&display=swap');
+
+/************************* Start of Reset Sheet Code *************************/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/************************* End of Reset Sheet Code *************************/
+
+
+body {
+	background: url("../Images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+header {
+	background-color: rgba(79, 88, 94, 0.4); /*This is brilliant use of opacity attached to an RGBA color*/
+    height: 120px;
+    position: sticky;
+    top: 0;
+   	
+}
+
+header nav ul {
+	display: block;
+	margin: 0 auto;
+    width: fit-content;
+   
+
+}
+
+header nav ul li {
+	display: inline-block;
+	float: left;
+	padding: 50px 50px;
+
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color:rgba(255, 199, 14, 1);
+	font-size: 30px;
+	font-family: 'Great Vibes', cursive;
+	
+
+}
+
+a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
+}
+
+div.banner {
+    background-color: rgba(79, 88, 94, 0.7);
+    margin: 0 auto;
+    margin-top: 30%;
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    color:rgba(255, 199, 14, 1);
+
+}
+
+div h1 {
+    padding-top: 10px;
+    letter-spacing: 4px;
+}
+
+section.our-wedding {
+    margin: 0 auto;
+    margin-top: 230px;
+    width: 80%;
+    background-color: rgba(79, 88, 94, 0.9);
+    border: 2px solid #fff;
+    
+
+}
+
+section > h1 {
+    padding-top: 50px;
+    font-family: 'Baumans', cursive;
+    font-size: 32px;
+    color:rgba(255, 199, 14, 1);
+    text-align: left;
+    margin-left: 12vw;
+}
+
+section > p {
+    padding: 50px 0;
+    font-family: 'Baumans', cursive;
+    font-size: 24px;
+    width: 50%;
+    margin-left: 100px;
+    color: #fff;
+    text-align: center;
+    
+    
+}
+
+section > p > span {
+    color: rgba(255, 199, 14, 1);
+}
+
+img {
+    margin: 1vh 10vw;
+    border: 2px solid white;
+    float: right;
+   
+}
+
+section.hotels { 
+    margin: 0 auto;
+    margin-top: 230px;
+    width: 80%;
+    height: 40%;
+    background-color: rgba(79, 88, 94, 0.9);
+          
+
+}
+
+div.options {
+    display: flex;
+    
+}
+
+div.hoption {
+   margin: 10px 10px;
+   margin: 0 auto;
+    
+}
+
+div.himage {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+}
+
