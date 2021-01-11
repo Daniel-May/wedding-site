@@ -6,11 +6,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 /************************* Start of Reset Sheet Code *************************/
 
 html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
 small, strong, sub, sup, var,
@@ -165,9 +166,13 @@ div.banner {
 
 }
 
-div h1 {
+div.banner h1 {
     padding-top: 10px;
     letter-spacing: 4px;
+}
+
+div.banner p {
+    margin: 0;
 }
 
 /** START OF WEDDING INFORMATION SECTION CODE **/
@@ -180,7 +185,7 @@ section.our-wedding {
     margin-top: 230px;
     margin-bottom: 230px;
     width: 90%;
-    background-color: rgba(79, 88, 94, 0.9);
+    background-color: rgba(79, 88, 94, 1);
     border: 1px solid #fff;
     
 
@@ -194,7 +199,7 @@ section.our-wedding {
 
 }
 
-#wed-info h1, #hotels h1 {
+#wed-info h1, #hotels h1, #gift-details h1 {
     padding-top: 50px;
     padding-bottom: 65px;
     text-decoration: underline;
@@ -207,7 +212,7 @@ section.our-wedding {
     font-family: 'Baumans', cursive;
     font-size: 20px;
     color: #fff;
-    padding-bottom: 40px;
+    
     
     
 }
@@ -246,6 +251,7 @@ section.our-wedding {
     text-align: center;
     align-content: center;
     margin: 0 auto;
+    margin-bottom: 230px;
     
 
 }
@@ -259,8 +265,9 @@ section.our-wedding {
     justify-content: center;
     text-align: center;
     border: 1px solid white;
-    padding: 5px;
+    padding: 0px;
     margin: 15px;
+    margin-bottom: 100px;
     
     
 }
@@ -293,15 +300,84 @@ section.our-wedding {
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    padding: 10px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 .hotel-description {
     font-size: 15px;
     font-family: 'Libre Franklin', sans-serif;
     color: white;
+    padding: 0px 20px 20px 20px;
+}
+
+/** END OF HOTEL SECTION CODE **/
+
+
+/** START OF GIFT SECTION CODE **/
+
+#gifts {
+    text-align: center;
+    background-color: rgba(79, 88, 94, 1.0);
+    width: 100%;
+}
+
+#gift-details {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 230px;
+}
+
+#gift-details p {
+    font-family: 'Kalam', cursive;
+    font-size: 24px;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+/** END OF GIFT SECTION CODE **/
+
+
+/** CONTACT **/
+
+#contact {
+    text-align: center;
+    background-color: rgba(79, 88, 94, 1.0);
+    width: 100%;
+}
+
+.fa-file-code {
+    font-size: 50px;
     padding: 20px;
 }
+
+#developer-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    
+
+}
+
+#developer {
+   vertical-align: middle;
+}
+
+#developer-name {
+    margin-top: 30px;
+    margin-bottom: 25px;
+
+}
+
+#developer-name p {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+
 
 
 
