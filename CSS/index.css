@@ -3,6 +3,9 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
 /************************* Start of Reset Sheet Code *************************/
 
@@ -16,7 +19,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
+footer, header, hgroup, menu, nav, summary,
 time, mark, audio, video {
     margin:0;
     padding:0;
@@ -158,7 +161,7 @@ div.banner {
     text-align: center;
     font-size: 40px;
     font-family: 'Great Vibes', cursive;
-    color:rgba(255, 199, 14, 1);
+    color:#FFB86F;
 
 }
 
@@ -167,72 +170,141 @@ div h1 {
     letter-spacing: 4px;
 }
 
+/** START OF WEDDING INFORMATION SECTION CODE **/
+
 section.our-wedding {
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 230px;
-    width: 80%;
+    margin-bottom: 230px;
+    width: 90%;
     background-color: rgba(79, 88, 94, 0.9);
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     
 
 }
 
-section > h1 {
-    padding-top: 50px;
-    font-family: 'Baumans', cursive;
-    font-size: 32px;
-    color:rgba(255, 199, 14, 1);
-    text-align: left;
-    margin-left: 12vw;
-}
-
-section > p {
-    padding: 50px 0;
-    font-family: 'Baumans', cursive;
-    font-size: 24px;
-    width: 50%;
-    margin-left: 100px;
-    color: #fff;
+#wed-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
+
+}
+
+#wed-info h1, #hotels h1 {
+    padding-top: 50px;
+    padding-bottom: 65px;
+    text-decoration: underline;
+    font-family: 'Baumans', cursive;
+    font-size: 30px;
+    color:rgba(255, 199, 14, 1);
+}
+
+#wed-info  p {
+    font-family: 'Baumans', cursive;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 40px;
     
     
 }
 
-section > p > span {
+#wed-info span {
     color: rgba(255, 199, 14, 1);
 }
 
-img {
-    margin: 1vh 10vw;
-    border: 2px solid white;
+#location-image {
+    width: 100%;
+}
+
+#location-image img {
     float: right;
+    border-left: 1px solid white;
    
 }
 
-section.hotels { 
-    margin: 0 auto;
-    margin-top: 230px;
-    width: 80%;
-    height: 40%;
-    background-color: rgba(79, 88, 94, 0.9);
-          
+/** END OF WEDDING INFORMATION SECTION CODE **/
 
+
+
+/** START OF HOTEL SECTION CODE **/
+
+#hotels {
+    text-align: center;
+    background-color: rgba(79, 88, 94, 1.0);
 }
 
-div.options {
+
+#options {
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    
+
+}
+
+.hoption {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 40%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 15px;
+    
     
 }
 
-div.hoption {
-   margin: 10px 10px;
-   margin: 0 auto;
-    
-}
-
-div.himage {
-    width: 300px;
+.hoption img {
+    width: 100%;
     height: 200px;
-    background-color: white;
+    padding-bottom: 20px;
 }
+
+.hoption button {
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: black;
+    color: white;
+
+}
+
+.hoption a {
+    text-decoration: none;
+    color:white;
+}
+
+.hotel-name {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding: 10px 20px 0px 20px;
+}
+
+.hotel-description {
+    font-size: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+
 
